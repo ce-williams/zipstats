@@ -1,3 +1,9 @@
+import testKey from '../fb';
+
+
+const key = testKey.name;
+const keyVal = testKey.numVal;
+
 // GET info
 const userSubmit = async () => {
     const response = await fetch('http://example.com/data.json');
@@ -17,3 +23,5 @@ const userAction = async () => {
     const myJson = await response.json(); //extract JSON from the http response
     // do something with myJson
 }
+
+
